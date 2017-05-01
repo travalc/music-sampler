@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  padding: 5%;
+}
+
+body {
+  background: #42ce46;
+  color: #fff;
+}
+
+.SearchedArtist {
+
+  padding: 2px 5px 2px 5px;
+
+  .imageDiv {
+    text-align: left;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+    margin-left: 0;
+  }
+  .genreList, p, h4 {
+    text-align: left;
+  }
+}
+
+.RelatedArtists {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+  .imageDiv {
+    margin: 4px;
+    display: inline-block;
+    position:relative;
+    cursor: pointer;
+    .raImage {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+
+    }
+    .playControl {
+      position: absolute;
+      text-align: center;
+      font-size: 25px;
+      background-color: black;
+      border-radius: 30px;
+      width: 60px;
+      height: 60px;
+      color: white;
+      padding-top: 13px;
+      bottom: 35px;
+      left: 35px;
+      opacity: 0
+    }
+    .playControl:hover {
+        opacity: 0.8;
+        animation-name: fade-in;
+        animation-duration: 0.5s;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity:0;
+  }
+  to{
+    opacity:0.8;
+  }
+}
