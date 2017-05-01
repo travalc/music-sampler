@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   padding: 5%;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -18,6 +19,8 @@ body {
   img {
     height: 300px;
     width: 300px;
+    border-radius: 50%;
+    border: solid white;
     margin-left: 0;
   }
   .genreList, p, h4 {
