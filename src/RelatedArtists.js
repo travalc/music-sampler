@@ -46,6 +46,7 @@ class RelatedArtists extends Component {
     return (
       <div>
         <h2>Artists Similar To {searchedArtist.name}</h2>
+        <p>Click an artist to play or pause their track</p>
         <div className="RelatedArtists">
           {
             relatedArtists.map((artist, k) => {
